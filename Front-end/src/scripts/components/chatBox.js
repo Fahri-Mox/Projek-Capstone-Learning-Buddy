@@ -17,6 +17,7 @@ export default class ChatBox {
     this.messagesEl = null;
     this.roadmapEl = null;
     this.inputEl = null;
+    this.inputArea = null;
     this.sendBtn = null;
     this.activeTab = "chat";
   }
@@ -25,7 +26,7 @@ export default class ChatBox {
     this.fab = document.createElement("button");
     this.fab.className = "lb-fab";
     this.fab.setAttribute("aria-label", "Open Learning Buddy");
-    this.fab.innerHTML = `
+    this.fab.innerHTML = /*svg*/ `
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M12 3C7.03 3 3 6.58 3 11c0 2.12.92 4.05 2.44 5.51L5 21l4.72-1.62C10.37 19.5 11.17 19.75 12 19.75 16.97 19.75 21 16.17 21 11.75 21 7.33 16.97 3 12 3z" fill="white" opacity="0.9"/>
       </svg>
@@ -37,15 +38,17 @@ export default class ChatBox {
     this.el.innerHTML = this._template();
     this.container.appendChild(this.el);
 
+    // refs
     this.messagesEl = this.el.querySelector(".lb-messages");
     this.roadmapEl = this.el.querySelector(".lb-roadmap");
     this.inputEl = this.el.querySelector(".lb-input");
+    this.inputArea = this.el.querySelector(".lb-input-area"); // <-- input wrapper
     this.sendBtn = this.el.querySelector(".lb-send");
     this.tabChat = this.el.querySelector('[data-tab="chat"]');
     this.tabRoadmap = this.el.querySelector('[data-tab="roadmap"]');
     this.closeBtn = this.el.querySelector(".lb-close");
 
-    this.fab.addEventListener("click", () => {
+    this.fab.addEventListener("click", (e) => {
       this.toggle();
     });
     this.closeBtn.addEventListener("click", () => this.hide());
@@ -119,8 +122,9 @@ export default class ChatBox {
 
   show() {
     this.el.classList.remove("lb-hidden");
+    this.switchTab(this.activeTab);
     setTimeout(() => {
-      this.inputEl.focus();
+      if (this.activeTab === "chat" && this.inputEl) this.inputEl.focus();
     }, 150);
   }
 
@@ -130,16 +134,28 @@ export default class ChatBox {
 
   switchTab(tabName) {
     this.activeTab = tabName;
+    const chatTab = this.tabChat;
+    const roadmapTab = this.tabRoadmap;
+
     if (tabName === "chat") {
-      this.tabChat.classList.add("active");
-      this.tabRoadmap.classList.remove("active");
+      chatTab.classList.add("active");
+      roadmapTab.classList.remove("active");
       this.el.querySelector(".lb-messages").style.display = "flex";
       this.el.querySelector(".lb-roadmap").style.display = "none";
+      if (this.inputArea) this.inputArea.style.display = "flex";
+      if (this.inputEl) this.inputEl.focus();
     } else {
-      this.tabChat.classList.remove("active");
-      this.tabRoadmap.classList.add("active");
+      chatTab.classList.remove("active");
+      roadmapTab.classList.add("active");
       this.el.querySelector(".lb-messages").style.display = "none";
       this.el.querySelector(".lb-roadmap").style.display = "flex";
+      if (this.inputArea) {
+        this.inputArea.style.display = "none";
+        if (this.inputEl) {
+          this.inputEl.value = "";
+          this.inputEl.blur();
+        }
+      }
     }
   }
 

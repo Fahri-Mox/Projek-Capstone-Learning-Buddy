@@ -1,6 +1,5 @@
 /** @format */
 
-// dummyChat.js
 const canned = [
   "Keren! Boleh ceritain skill apa yang ingin kamu kembangkan?",
   "Bagus! Untuk level beginner, aku rekomendasikan mulai dari dasar dulu: konsep, praktek kecil, dan project mini.",
@@ -15,7 +14,7 @@ export function getBotReply(userMessage = "") {
   const text = (userMessage || "").toLowerCase();
 
   if (!text.trim()) {
-    return "Maaf, saya tidak menerima pesan kosong. Coba ketik sesuatu 😊";
+    return "Maaf, saya tidak menerima pesan kosong. Coba ketik sesuatu ya!";
   }
   if (text.includes("halo") || text.includes("hi") || text.includes("hai")) {
     return "Halo! Aku Learning Buddy. Mau mulai assessment atau langsung tanya rekomendasi kursus?";
