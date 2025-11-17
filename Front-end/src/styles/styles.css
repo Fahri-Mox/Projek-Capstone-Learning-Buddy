@@ -1,5 +1,6 @@
 /** @format */
 
+
 :root {
   --dicoding-blue: #1a1a40;
   --dicoding-navy: #0f0f25;
@@ -67,6 +68,7 @@ p {
   margin: 0;
 }
 
+/* ========== Main Layout  */
 
 .main-container {
   max-width: 1100px;
@@ -509,6 +511,8 @@ p {
 .feature-btn:active {
   transform: translateY(-2px) scale(1.02);
 }
+
+/* ========== About Section ========== */
 
 .about-section {
   padding: 40px 0;
@@ -1351,10 +1355,6 @@ footer {
     height: 24px;
   }
 }
-/* ========================================================
-   SPA PAGE TRANSITIONS
-   ======================================================== */
-
 /* Fade transition saat pindah halaman */
 .fade-out {
   opacity: 0;
