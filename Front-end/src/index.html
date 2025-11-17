@@ -1,34 +1,132 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="/styles/styles.css" />
-    <title>Learning Buddy - Dicoding Platform</title>
+    <title>Learning Buddy</title>
   </head>
   <body>
     <main class="main-container">
-      <header class="hero-section">
+      <header class="hero-section fade-in-down">
         <h1>Dicoding Platform Demo</h1>
         <p>Demo halaman — widget Learning Buddy ada di pojok kanan bawah.</p>
+        <nav class="nav-buttons">
+          <a href="#features" class="nav-link">Lihat Fitur →</a>
+          <a href="#about" class="nav-link secondary">Tentang Kami →</a>
+        </nav>
       </header>
 
-      <section class="features-section">
+      <section class="features-section" id="features">
+        <h2 class="section-title fade-in-up" style="animation-delay: 0.1s">
+          Fitur Unggulan
+        </h2>
         <div class="features-grid">
-          <div class="feature-card">
-            <h3>Fitur A</h3>
-            <p>Deskripsi fitur A.</p>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
+            <h3>🎯 Fitur A</h3>
+            <p>Deskripsi fitur A yang memberikan nilai tambah luar biasa.</p>
           </div>
-          <div class="feature-card">
-            <h3>Fitur B</h3>
-            <p>Deskripsi fitur B.</p>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
+            <h3>💬 Fitur B</h3>
+            <p>Deskripsi fitur B dengan teknologi terdepan.</p>
+          </div>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
+            <h3>⚡ Fitur C</h3>
+            <p>Deskripsi fitur C untuk pengalaman maksimal.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <h2 class="section-title fade-in-up" style="animation-delay: 0.1s">
+          Tentang Learning Buddy
+        </h2>
+        <div class="about-grid">
+          <div class="about-card fade-in-up" style="animation-delay: 0.2s">
+            <div class="card-icon">🚀</div>
+            <h3>Inovasi</h3>
+            <p>Platform pembelajaran dengan teknologi AI terdepan.</p>
+          </div>
+          <div class="about-card fade-in-up" style="animation-delay: 0.3s">
+            <div class="card-icon">🎓</div>
+            <h3>Edukasi</h3>
+            <p>Kualitas terbaik dalam setiap konten pembelajaran.</p>
+          </div>
+          <div class="about-card fade-in-up" style="animation-delay: 0.4s">
+            <div class="card-icon">💡</div>
+            <h3>Inspirasi</h3>
+            <p>Memberdayakan setiap siswa untuk mencapai impian mereka.</p>
           </div>
         </div>
       </section>
     </main>
 
+    <footer>
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Learning Buddy</h3>
+            <p>
+              Platform pembelajaran AI-powered yang membantu Anda mencapai
+              potensi penuh dalam tech career journey.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Fitur</h3>
+            <ul>
+              <li>
+                <a href="#features" data-route="features">Smart Assessment</a>
+              </li>
+              <li>
+                <a href="#features" data-route="features">Interactive Chat</a>
+              </li>
+              <li>
+                <a href="#features" data-route="features">Roadmap Generator</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Perusahaan</h3>
+            <ul>
+              <li><a href="#about" data-route="about">Tentang Kami</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Syarat Layanan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <ul>
+              <li>
+                <a href="mailto:support@learningbuddy.com"
+                  >support@learningbuddy.com</a
+                >
+              </li>
+              <li><a href="#">+62 8533764757/a></li>
+              <li><a href="#">Jakarta, Indonesia</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-credit">
+            © 2025 Learning Buddy by Dicoding. All rights reserved.
+          </div>
+          <div class="social-links">
+            <a href="#" title="Twitter">𝕏</a>
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="GitHub">🐙</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./router/spa.js"></script>
     <script src="/bundle.js"></script>
   </body>
 </html>
