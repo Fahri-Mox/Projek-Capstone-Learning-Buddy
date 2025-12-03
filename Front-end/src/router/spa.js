@@ -70,17 +70,17 @@ class SpaRouter {
         </h2>
         <div class="features-grid">
           <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
-            <h3>🎯 Fitur A</h3>
+            <h3>Fitur A</h3>
             <p>Smart Assessment - Sistem assessment interaktif yang mengukur pemahaman Anda secara real-time dengan AI-powered feedback.</p>
             <a href="#features" data-route="features" class="feature-btn">Pelajari Lebih Lanjut</a>
           </div>
           <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
-            <h3>💬 Fitur B</h3>
+            <h3>Fitur B</h3>
             <p>Interactive Chat - Chatbot cerdas siap membantu menjawab pertanyaan kapan saja dengan penjelasan detail dan rekomendasi.</p>
             <a href="#features" data-route="features" class="feature-btn">Pelajari Lebih Lanjut</a>
           </div>
           <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
-            <h3>⚡ Fitur C</h3>
+            <h3>Fitur C</h3>
             <p>Roadmap Generator - Buat roadmap pembelajaran personal yang dinamis sesuai skill dan tujuan karir Anda.</p>
             <a href="#features" data-route="features" class="feature-btn">Pelajari Lebih Lanjut</a>
           </div>
@@ -93,17 +93,17 @@ class SpaRouter {
         </h2>
         <div class="about-grid">
           <div class="about-card fade-in-up" style="animation-delay: 0.2s">
-            <div class="card-icon">🚀</div>
+            <div class="card-icon"></div>
             <h3>Inovasi</h3>
             <p>Platform pembelajaran dengan teknologi AI terdepan.</p>
           </div>
           <div class="about-card fade-in-up" style="animation-delay: 0.3s">
-            <div class="card-icon">🎓</div>
+            <div class="card-icon"></div>
             <h3>Edukasi</h3>
             <p>Kualitas terbaik dalam setiap konten pembelajaran.</p>
           </div>
           <div class="about-card fade-in-up" style="animation-delay: 0.4s">
-            <div class="card-icon">💡</div>
+            <div class="card-icon"></div>
             <h3>Inspirasi</h3>
             <p>Memberdayakan setiap siswa untuk mencapai impian mereka.</p>
           </div>
@@ -111,9 +111,7 @@ class SpaRouter {
       </section>
     `;
 
-    // Trigger animasi cards di home
     this.triggerHomeCardAnimations();
-    // Setup ripple effect pada buttons
     this.setupRippleEffect();
   }
 
@@ -128,7 +126,7 @@ class SpaRouter {
 
       <section class="features-detail-section">
         <div class="feature-card">
-          <div class="feature-icon">🎯</div>
+          <div class="feature-icon"></div>
           <div class="card-head"><h3>Fitur A - Smart Assessment</h3></div>
           <p>Sistem assessment interaktif yang mengukur pemahaman Anda secara real-time dengan AI-powered feedback yang personal dan actionable.</p>
           <div class="feature-tags">
@@ -139,7 +137,7 @@ class SpaRouter {
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">💬</div>
+          <div class="feature-icon"></div>
           <div class="card-head"><h3>Fitur B - Interactive Chat</h3></div>
           <p>Chatbot cerdas yang siap membantu menjawab pertanyaan Anda kapan saja. Dapatkan penjelasan detail, tips belajar, dan rekomendasi kursus yang tepat.</p>
           <div class="feature-tags">
@@ -150,7 +148,7 @@ class SpaRouter {
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">⚡</div>
+          <div class="feature-icon"></div>
           <div class="card-head"><h3>Fitur C - Roadmap Generator</h3></div>
           <p>Buat roadmap pembelajaran yang dipersonalisasi berdasarkan skill Anda saat ini dan target karir yang ingin dicapai. Update otomatis seiring progress Anda.</p>
           <div class="feature-tags">
@@ -162,7 +160,6 @@ class SpaRouter {
       </section>
     `;
 
-    // tambahkan animasi bertahap (stagger) + shimmer untuk semua card
     this.animateFeatureCards();
   }
 
@@ -199,7 +196,7 @@ class SpaRouter {
       <section class="about-mission-vision fade-in-up">
         <div class="mission-card">
           <div class="mission-header">
-            <div class="mission-icon">🎯</div>
+            <div class="mission-icon"></div>
             <h3>Misi Kami</h3>
           </div>
           <p>Kami percaya bahwa setiap individu berhak mendapatkan akses ke pendidikan berkualitas tinggi yang dipersonalisasi. Learning Buddy hadir untuk membantu Anda menemukan jalur pembelajaran yang paling efektif sesuai dengan kecepatan dan gaya belajar Anda sendiri.</p>
@@ -207,7 +204,7 @@ class SpaRouter {
 
         <div class="vision-card">
           <div class="vision-header">
-            <div class="vision-icon">🚀</div>
+            <div class="vision-icon"></div>
             <h3>Visi Kami</h3>
           </div>
           <p>Menjadi platform pembelajaran yang paling inovatif dan terpercaya di Asia Tenggara, dengan memberdayakan jutaan learner untuk mencapai potensi penuh mereka melalui teknologi AI yang canggih dan konten berkualitas premium.</p>
@@ -218,28 +215,28 @@ class SpaRouter {
         <h2 class="section-title">Nilai-Nilai Kami</h2>
         <div class="values-grid">
           <div class="value-card value-card-1 fade-in-up">
-            <div class="value-icon">🚀</div>
+            <div class="value-icon"></div>
             <h3>Inovasi</h3>
             <p>Kami terus berinovasi dengan teknologi terbaru untuk memberikan pengalaman belajar yang tak tertandingi.</p>
             <div class="value-accent"></div>
           </div>
 
           <div class="value-card value-card-2 fade-in-up">
-            <div class="value-icon">🎓</div>
+            <div class="value-icon"></div>
             <h3>Kualitas</h3>
             <p>Setiap konten dikurasi oleh expert industri untuk memastikan relevansi dan akurasi terkini.</p>
             <div class="value-accent"></div>
           </div>
 
           <div class="value-card value-card-3 fade-in-up">
-            <div class="value-icon">💡</div>
+            <div class="value-icon"></div>
             <h3>Komunitas</h3>
             <p>Bergabunglah dengan ribuan learner yang saling mendukung dalam perjalanan belajar mereka.</p>
             <div class="value-accent"></div>
           </div>
 
           <div class="value-card value-card-4 fade-in-up">
-            <div class="value-icon">🌟</div>
+            <div class="value-icon"></div>
             <h3>Kesuksesan</h3>
             <p>Ratusan alumni telah berhasil meraih posisi impian mereka melalui Learning Buddy.</p>
             <div class="value-accent"></div>
@@ -252,21 +249,21 @@ class SpaRouter {
         <p class="team-subtitle">Dipimpin oleh para expert dari Dicoding dengan pengalaman puluhan tahun di industri tech</p>
         <div class="team-grid">
           <div class="team-member fade-in-up">
-            <div class="member-avatar">👨‍💼</div>
+            <div class="member-avatar"></div>
             <h3>Rafi Ananda</h3>
             <p class="member-role">Founder & CEO</p>
             <p class="member-bio">Visioner dalam pendidikan teknologi dengan 10+ tahun pengalaman</p>
           </div>
 
           <div class="team-member fade-in-up">
-            <div class="member-avatar">👩‍💻</div>
+            <div class="member-avatar"></div>
             <h3>Sarah Putri</h3>
             <p class="member-role">CTO</p>
             <p class="member-bio">AI & Machine Learning expert, alumni top tech companies</p>
           </div>
 
           <div class="team-member fade-in-up">
-            <div class="member-avatar">👨‍🎓</div>
+            <div class="member-avatar"></div>
             <h3>Budi Santoso</h3>
             <p class="member-role">Head of Content</p>
             <p class="member-bio">Kurator konten dengan track record mengajar di universitas ternama</p>
@@ -282,36 +279,29 @@ class SpaRouter {
     `;
   }
 
-  // ----------------------------
-  // Animate feature cards dengan stagger + shimmer untuk SEMUA card
-  // ----------------------------
   animateFeatureCards() {
     const cards = Array.from(
       document.querySelectorAll(".features-detail-section .feature-card")
     );
     cards.forEach((c) => {
-      // reset classes if re-render
       c.classList.remove("is-visible", "shimmer", "animate-shine");
     });
 
-    // stagger visibility untuk semua cards
     cards.forEach((card, i) => {
-      const delay = i * 120; // ms
+      const delay = i * 120;
       setTimeout(() => {
         card.classList.add("is-visible");
 
-        // tambahkan shimmer ke SEMUA cards (bukan hanya yang tengah)
         card.classList.add("shimmer");
-        // trigger shine after a tick
+
         requestAnimationFrame(() => card.classList.add("animate-shine"));
-        // remove shimmer classes after done
+
         setTimeout(() => {
           card.classList.remove("shimmer", "animate-shine");
         }, 1100);
       }, 180 + delay);
     });
 
-    // subtle stagger for headlines and paras
     cards.forEach((card, i) => {
       const head = card.querySelector(".card-head");
       const p = card.querySelector("p");
@@ -320,7 +310,6 @@ class SpaRouter {
     });
   }
 
-  // Setup ripple effect untuk feature buttons
   setupRippleEffect() {
     const buttons = document.querySelectorAll(".feature-btn");
     buttons.forEach((button) => {
@@ -340,7 +329,6 @@ class SpaRouter {
     });
   }
 
-  // Trigger animasi untuk home page cards dengan shimmer di semua card
   triggerHomeCardAnimations() {
     const cards = Array.from(
       document.querySelectorAll(".features-grid .feature-card")
@@ -351,7 +339,6 @@ class SpaRouter {
       setTimeout(() => {
         card.classList.add("is-visible");
 
-        // Shimmer effect untuk SEMUA cards (bukan hanya tengah)
         card.classList.add("shimmer");
         requestAnimationFrame(() => card.classList.add("animate-shine"));
         setTimeout(() => {
